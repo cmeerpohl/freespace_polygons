@@ -8,8 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_compile_options(-Wall -Wextra -fPIC)
 
 include(CMakeDependentOption)
-#cmake_dependent_option(ENABLE_TESTING "Enable Tests" ON
-#        "CATKIN_ENABLE_TESTING" OFF)
+cmake_dependent_option(ENABLE_TESTING "Enable Tests" ON
+        "CATKIN_ENABLE_TESTING" ON)
 
 #find_package(catkin REQUIRED COMPONENTS
 #        roscpp
@@ -38,6 +38,9 @@ include_directories(
 #        ${catkin_INCLUDE_DIRS}
         ${EIGEN3_INCLUDE_DIR}
 )
+
+find_package(GTest REQUIRED)
+enable_testing()
 
 #if(catkin_FOUND)
 #    add_definitions(-DHAVE_ROS)

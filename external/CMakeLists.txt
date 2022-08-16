@@ -1,1 +1,2 @@
-add_subdirectory(Clipper2/CPP)
+add_subdirectory(ClipperLib)
+add_subdirectory(Beta-SLAM)

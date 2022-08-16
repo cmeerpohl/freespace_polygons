@@ -1,0 +1,3 @@
+[submodule "external/Beta-SLAM"]
+	path = external/Beta-SLAM
+	url = git@github.com:cmeerpohl/Beta-SLAM.git

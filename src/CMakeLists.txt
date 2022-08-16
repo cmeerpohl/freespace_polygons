@@ -1,3 +1,2 @@
-add_subdirectory(freespace)
-
-
+add_subdirectory(polygons)
+add_subdirectory(types)
